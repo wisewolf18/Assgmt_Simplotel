@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Responsive Navbar</title>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+  <a href="#">Home</a>
+  <a href="#">Order</a>
+  <a href="#">Food</a>
+  <a href="#">Restaurant</a>
+  <a href="#">Testimonials</a>
+  <a href="#">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+    <img class="navbar-icon" src="./HTML CSS Assignment/menu-bar.png" alt="Menu">
+  </a>
+</div>
+
+<div class="content">
+  <div class="info">
+    <h2 class="info-header">LOREM IPSUM</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+        id est vitae dolor rhoncus tristique. Maecenas metus quam,
+        rhoncus euismod lorem in, sollicitudin viverra eros. Donec
+        dictum luctus quam ut tristique. Curabitur nec faucibus purus.
+        Quisque congue sem nec justo mollis, in tincidunt erat pretium.
+        Sed pulvinar, massa ac porta viverra.
+    </p>
+    <button class="button">CLICK ME</button>
+  </div>
+
+  <div>
+    <img class="food-img" src="./HTML CSS Assignment/pexels-robin-stickel-70497.jpg" alt="">
+  </div>
+</div>
+<hr>
+<div class="content">
+  <div class="photo-container">
+    <div class="img2"><img src="./HTML CSS Assignment/pexels-rachel-claire-6752433.jpg" alt="Image 1"></div>
+    <div class="img1"><img src="./HTML CSS Assignment/pexels-mister-mister-3434523.jpg" alt="Image 3"></div>
+    <div class="img3"><img src="./HTML CSS Assignment/pexels-eva-bronzini-6141651.jpg" alt="Image 2"></div>
+  </div>
+  <div class="info-2">
+    <div class="info-cont2">
+      <p>Lorem ipsum</p>
+      <h2 class="info-header">LOREM IPSUM <br> SET ADEMIR</h2>
+      <a class="click-a" href="#">Click <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" id="arrow"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M1 7h16M11 1l6 6-6 6"></path></g></svg></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleNavbar() {
+    var x = document.getElementById("navbar");
+    if (x.className.indexOf("responsive") === -1) {
+      x.className += " responsive";
+    } else {
+      x.className = x.className.replace(" responsive", "");
+    }
+  }
+</script>
+
+</body>
+</html>
